@@ -12,7 +12,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function Kindred(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/kindred.glb')
+  const { nodes, materials, animations } = useGLTF('./models/kindred.glb')
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
     actions.Animation.play();
@@ -135,4 +135,4 @@ export function Kindred(props) {
   )
 }
 
-useGLTF.preload('/models/kindred.glb')
+useGLTF.preload('./models/kindred.glb')

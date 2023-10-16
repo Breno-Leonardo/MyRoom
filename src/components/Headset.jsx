@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Headset(props) {
-  const { nodes, materials } = useGLTF('/models/headset.glb')
+  const { nodes, materials } = useGLTF('./models/headset.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -13,4 +13,4 @@ export function Headset(props) {
   )
 }
 
-useGLTF.preload('/models/headset.glb')
+useGLTF.preload('./models/headset.glb')

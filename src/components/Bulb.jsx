@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Bulb(props) {
-  const { nodes, materials } = useGLTF('/models/bulb.glb')
+  const { nodes, materials } = useGLTF('./models/bulb.glb')
   return (
     <group {...props} dispose={null}>
       <mesh transparent opacity={0.1} geometry={nodes.Object_5.geometry} material={materials.surfaceShader1} position={[0, -10.164, -23.149]} />
@@ -19,4 +19,4 @@ export function Bulb(props) {
   )
 }
 
-useGLTF.preload('/models/bulb.glb')
+useGLTF.preload('./models/bulb.glb')

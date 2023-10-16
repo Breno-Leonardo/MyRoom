@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Windows(props) {
-  const { nodes, materials } = useGLTF('/models/windows.glb')
+  const { nodes, materials } = useGLTF('./models/windows.glb')
   
   
   
@@ -19,4 +19,4 @@ export function Windows(props) {
   )
 }
 
-useGLTF.preload('/models/windows.glb')
+useGLTF.preload('./models/windows.glb')

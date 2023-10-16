@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Frame(props) {
-  const { nodes, materials } = useGLTF('/models/frame.glb')
+  const { nodes, materials } = useGLTF('./models/frame.glb')
   materials.wire_027177027.color.setStyle("#000")
   return (
     <group {...props} dispose={null}>
@@ -15,4 +15,4 @@ export function Frame(props) {
   )
 }
 
-useGLTF.preload('/models/frame.glb')
+useGLTF.preload('./models/frame.glb')

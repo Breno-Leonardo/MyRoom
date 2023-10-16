@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { MeshPhysicalMaterial } from 'three';
 export function Desk(props) {
-  const { nodes, materials } = useGLTF('/models/desk.glb')
+  const { nodes, materials } = useGLTF('./models/desk.glb')
 
   const meshNew= new MeshPhysicalMaterial({color:"#ffffff"});
 
@@ -15,4 +15,4 @@ export function Desk(props) {
   )
 }
 
-useGLTF.preload('/models/desk.glb')
+useGLTF.preload('./models/desk.glb')

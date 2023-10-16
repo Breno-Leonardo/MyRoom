@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Microphone(props) {
-  const { nodes, materials } = useGLTF('/models/microphone.glb')
+  const { nodes, materials } = useGLTF('./models/microphone.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -65,4 +65,4 @@ export function Microphone(props) {
   )
 }
 
-useGLTF.preload('/models/microphone.glb')
+useGLTF.preload('./models/microphone.glb')

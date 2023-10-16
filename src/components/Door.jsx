@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Door(props) {
-  const { nodes, materials } = useGLTF('/models/door.glb')
+  const { nodes, materials } = useGLTF('./models/door.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={100}>
@@ -21,4 +21,4 @@ export function Door(props) {
   )
 }
 
-useGLTF.preload('/models/door.glb')
+useGLTF.preload('./models/door.glb')

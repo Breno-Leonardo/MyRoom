@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Mouse(props) {
-  const { nodes, materials } = useGLTF('/models/pcMouse.glb')
+  const { nodes, materials } = useGLTF('./models/pcMouse.glb')
   const aquaMarine="#017371"
   materials.plastic.color.setStyle("#FFFFFF")
   materials.mouse_light.color.setStyle(aquaMarine)
@@ -28,4 +28,4 @@ export function Mouse(props) {
   )
 }
 
-useGLTF.preload('/models/pcMouse.glb')
+useGLTF.preload('./models/pcMouse.glb')

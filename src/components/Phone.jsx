@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Phone(props) {
-  const { nodes, materials } = useGLTF('/models/phone.glb')
+  const { nodes, materials } = useGLTF('./models/phone.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -23,4 +23,4 @@ export function Phone(props) {
   )
 }
 
-useGLTF.preload('/models/phone.glb')
+useGLTF.preload('./models/phone.glb')

@@ -3,21 +3,21 @@ import { useTexture ,Plane} from "@react-three/drei";
 
 export function WallsRoom(props) {
     const textureFloor = useTexture({
-        normalMap: "/textures/Limestone_1_normal-1K.png",
-        map: "/textures/Limestone_1_basecolor-1K.png",
-        aoMap: "/textures/Limestone_1_ambientocclusion-1K.png",
-        roughnessMap: "/textures/Limestone_1_roughness-1K.png",
+        normalMap: "./textures/Limestone_1_normal-1K.png",
+        map: "./textures/Limestone_1_basecolor-1K.png",
+        aoMap: "./textures/Limestone_1_ambientocclusion-1K.png",
+        roughnessMap: "./textures/Limestone_1_roughness-1K.png",
       });
     
       const textureWall = useTexture({
-        map: "/textures/augustine-wong-3Om4DHcaAc0-unsplash.jpg",
+        map: "./textures/augustine-wong-3Om4DHcaAc0-unsplash.jpg",
       });
     
       const textureBlackWall = useTexture({
-        // normalMap:"/textures/1K-black_plastic_normal.png",
-        map: "/textures/1K-black_plastic_basecolor.png",
-        aoMap: "/textures/1K-black_plastic_ambientocclusion.png",
-        roughnessMap: "/textures/1K-black_plastic_roughness.png",
+        // normalMap:"./textures/1K-black_plastic_normal.png",
+        map: "./textures/1K-black_plastic_basecolor.png",
+        aoMap: "./textures/1K-black_plastic_ambientocclusion.png",
+        roughnessMap: "./textures/1K-black_plastic_roughness.png",
       });
     
 

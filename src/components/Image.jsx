@@ -7,8 +7,8 @@ export function Image(props) {
 
     return (
       <mesh  castShadow receiveShadow {...props}>
-      <planeGeometry   />
-      <meshBasicMaterial  map={texture} />
+      <planeGeometry  />
+      <meshBasicMaterial   map={texture} />
     </mesh>
     )
   }

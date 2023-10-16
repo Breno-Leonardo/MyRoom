@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Blinds(props) {
-  const { nodes, materials } = useGLTF('/models/blinds.glb')
+  const { nodes, materials } = useGLTF('./models/blinds.glb')
   
   //changin color
   materials.white_plas.color.setStyle("#000000")
@@ -25,4 +25,4 @@ export function Blinds(props) {
   )
 }
 
-useGLTF.preload('/models/blinds.glb')
+useGLTF.preload('./models/blinds.glb')

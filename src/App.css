@@ -8,7 +8,7 @@
   flex-direction: column;
   position: fixed;
   left: 0;
-  bottom: 0vh;
+  bottom: -4rem;
   width: 20vw;
   height: 27vh;
   -webkit-text-stroke: 1px #000;
@@ -30,9 +30,9 @@
 
 
 .toggleWrapper{
-  position: fixed;
-  left: 20vw;
-  bottom: 0vh;
+  position: absolute;
+  left: 25rem;
+  bottom: -1rem;
   padding: 0 200px;
   transform: translate3d(-50%, -50%, 0);
   color: white;
@@ -40,6 +40,13 @@
 .toggleWrapper input{
   position: absolute;
   left: -99em;
+}
+.toggleWrapper p{
+  text-align: center;
+  margin:0;
+  -webkit-text-stroke: 1px #000;
+  font-weight: bold;
+  font-size: 22px;
 }
 .toggle{
   cursor: pointer;
@@ -188,4 +195,33 @@ input:checked + .toggle .star--5{
 }
 input:checked + .toggle .star--6{
   transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+
+.loadingDiv{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color:#000;
+  font-size: 7vw;
+  font-weight: bold;
+  justify-content: center;
+  align-items:center;
+}
+.numberLoading{
+  color:greenyellow;
+}
+@media (max-width:1024px){
+  .menuLine{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    visibility: hidden;
+  }
+  .toggleWrapper{
+    left: 5rem;
+  }
+  
 }

@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Monitor(props) {
-  const { nodes, materials } = useGLTF('/models/monitor.glb')
+  const { nodes, materials } = useGLTF('./models/monitor.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.065}>
@@ -32,4 +32,4 @@ export function Monitor(props) {
   )
 }
 
-useGLTF.preload('/models/monitor.glb')
+useGLTF.preload('./models/monitor.glb')

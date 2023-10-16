@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { MeshReflectorMaterial, useGLTF } from '@react-three/drei'
 import { MeshPhongMaterial } from 'three'
 export function MousePad(props) {
-  const { nodes, materials } = useGLTF('/models/mouse.glb')
+  const { nodes, materials } = useGLTF('./models/mouse.glb')
   materials.mouse.color.setStyle("#7FFFD4")
   return (
     <group {...props} dispose={null}>
@@ -17,4 +17,4 @@ export function MousePad(props) {
   )
 }
 
-useGLTF.preload('/models/mouse.glb')
+useGLTF.preload('./models/mouse.glb')

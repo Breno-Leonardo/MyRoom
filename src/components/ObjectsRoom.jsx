@@ -68,19 +68,19 @@ export function ObjectsRoom(props) {
         scale={[0.6, 0.75, 0.5]}
         position={[2, 1.4, 0.03]}
         rotation={[0, 0, 0]}
-        img="/textures/blackPosterLuffy.png"
+        img="./textures/blackPosterLuffy.png"
       />
 
       <ImageWithFrame
         scale={[1, 0.75, 1]}
         position={[1, 1.4, -2.9]}
-        img="/textures/kindred.jpg"
+        img="./textures/kindred.jpg"
       />
 
       <ImageWithFrame
         scale={[1, 0.75, 1]}
         position={[3, 1.4, -2.9]}
-        img="/textures/kindredClassic.png"
+        img="./textures/kindredClassic.png"
       />
 
       <Modem
@@ -129,35 +129,35 @@ export function ObjectsRoom(props) {
         scale={[1.55, 0.9, 1]}
         position={[3.79, 0.07, 4.7]}
         rotation={[0, 4.74, 0]}
-        img="/textures/monitor.png"
+        img="./textures/monitor.png"
       />
 
       <Image
         scale={[1.55, 0.9, 1]}
         position={[3.79, 0.07, 3]}
         rotation={[0, 4.74, 0]}
-        img="/textures/monitor2.png"
+        img="./textures/monitor2.png"
       />
 
       <Image
         scale={[1.8, 1.4, 1]}
         position={[4.9, 1.7, 4.9]}
         rotation={[0, -1.6, 0]}
-        img="/textures/quadroMeio.jpg"
+        img="./textures/quadroMeio.jpg"
       />
 
       <ImageWithFrame
         scale={[0.75, 1, 1]}
         position={[7.9, 1.6, 2.5]}
         rotation={[0, -1.6, 0]}
-        img="/textures/breaking.jpg"
+        img="./textures/breaking.jpg"
       />
 
       <ImageWithFrame
         scale={[0.75, 1, 1]}
         position={[7.9, 1.6, 7.5]}
         rotation={[0, -1.6, 0]}
-        img="/textures/nika.jpg"
+        img="./textures/nika.jpg"
       />
 
       <Desk
@@ -247,7 +247,7 @@ export function ObjectsRoom(props) {
         scale={[0.6, 0.75, 0.5]}
         position={[3.4, 1.6, 9.9]}
         rotation={[0, -3.2, 0]}
-        img="/textures/luffyPoster.jpg"
+        img="./textures/luffyPoster.jpg"
       />
 
       <Blinds

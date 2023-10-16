@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Celling(props) {
-  const { nodes, materials } = useGLTF('/models/celling.glb')
+  const { nodes, materials } = useGLTF('./models/celling.glb')
   
   //changing color
   materials['Material.001'].color.setStyle("#d3d3d3")
@@ -19,4 +19,4 @@ export function Celling(props) {
   )
 }
 
-useGLTF.preload('/models/celling.glb')
+useGLTF.preload('./models/celling.glb')

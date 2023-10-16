@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Zoro(props) {
-  const { nodes, materials , scene} = useGLTF('/models/zoro.glb')
+  const { nodes, materials , scene} = useGLTF('./models/zoro.glb')
   
   return (
     <group {...props}  dispose={null}>
@@ -63,4 +63,4 @@ export function Zoro(props) {
   )
 }
 
-useGLTF.preload('/models/zoro.glb')
+useGLTF.preload('./models/zoro.glb')

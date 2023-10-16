@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Vinil(props) {
-  const { nodes, materials } = useGLTF('/models/vinil.glb')
+  const { nodes, materials } = useGLTF('./models/vinil.glb')
   materials['PBR.1'].color.setStyle("#fffb08")
   
   return (
@@ -14,4 +14,4 @@ export function Vinil(props) {
   )
 }
 
-useGLTF.preload('/models/vinil.glb')
+useGLTF.preload('./models/vinil.glb')

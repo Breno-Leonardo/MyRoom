@@ -6,17 +6,17 @@ import {   MeshPhysicalMaterial } from 'three'
 
 export function Closet(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/models/closet2.glb')
+  const { nodes, materials, animations } = useGLTF('./models/closet2.glb')
   const { actions } = useAnimations(animations, group)
   materials.Sicomora.color.setStyle("#000")
   materials.RAL_7047_telegrey_4_semiglos.color.setStyle("#fff")
 
   const textureMetalic = useTexture({
-    normalMap: "/textures/Metal_scratched_008_metallic.jpg",
-    map: "/textures/Metal_scratched_008_basecolor.jpg",
-    aoMap: "/textures/Metal_scratched_008_ambientOcclusion.jpg",
-    roughnessMap: "/textures/Metal_scratched_008_roughness.jpg",
-    metalnessMap:"/textures/Metal_scratched_008_metallic.jpg"
+    normalMap: "./textures/Metal_scratched_008_metallic.jpg",
+    map: "./textures/Metal_scratched_008_basecolor.jpg",
+    aoMap: "./textures/Metal_scratched_008_ambientOcclusion.jpg",
+    roughnessMap: "./textures/Metal_scratched_008_roughness.jpg",
+    metalnessMap:"./textures/Metal_scratched_008_metallic.jpg"
   });
   const meshNew= new MeshPhysicalMaterial({color:"#ffffff", ...textureMetalic});
   
@@ -301,4 +301,4 @@ export function Closet(props) {
   )
 }
 
-useGLTF.preload('/models/closet2.glb')
+useGLTF.preload('./models/closet2.glb')

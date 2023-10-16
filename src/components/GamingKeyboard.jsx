@@ -11,7 +11,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function GamingKeyboard(props) {
-  const { nodes, materials } = useGLTF('/models/gamingKeyboard.glb')
+  const { nodes, materials } = useGLTF('./models/gamingKeyboard.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.085}>
@@ -21,4 +21,4 @@ export function GamingKeyboard(props) {
   )
 }
 
-useGLTF.preload('/models/gamingKeyboard.glb')
+useGLTF.preload('./models/gamingKeyboard.glb')

@@ -12,9 +12,9 @@ export function ImageWithFrame(props) {
         rotation={[1.575, 0, 0]}
         scale={[0.0165, 0.03, 0.024]}
       />
-      <mesh position={[0, 0, 3]} scale={[1,1,1]}>
+      <mesh castShadow receiveShadow position={[0, 0, 3]} scale={[1,1,1]}>
         <planeGeometry />
-        <meshBasicMaterial map={texture} />
+        <meshBasicMaterial  map={texture} />
       </mesh>
     </group>
   );

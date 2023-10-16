@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Pc(props) {
-  const { nodes, materials } = useGLTF('/models/pc.glb')
+  const { nodes, materials } = useGLTF('./models/pc.glb')
   materials['04_-_Default'].transparent=true;
   materials['04_-_Default'].opacity=0.5;
   materials['07_-_Default'].transparent=true;
@@ -81,4 +81,4 @@ export function Pc(props) {
   )
 }
 
-useGLTF.preload('/models/pc.glb')
+useGLTF.preload('./models/pc.glb')

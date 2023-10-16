@@ -5,8 +5,8 @@ import { useGLTF } from '@react-three/drei'
 import { MeshPhysicalMaterial } from 'three';
 
 export function DeskSide(props) {
-  const { nodes } = useGLTF('/models/deskSide.glb')
-  const {  materials} = useGLTF('/models/desk.glb')
+  const { nodes } = useGLTF('./models/deskSide.glb')
+  const {  materials} = useGLTF('./models/desk.glb')
   const meshNew= new MeshPhysicalMaterial({color:"#ffffff"});
   return (
     <group {...props} dispose={null}>
@@ -23,4 +23,4 @@ export function DeskSide(props) {
   )
 }
 
-useGLTF.preload('/models/deskSide.glb')
+useGLTF.preload('./models/deskSide.glb')

@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Switch(props) {
-  const { nodes, materials } = useGLTF('/models/switch.glb')
+  const { nodes, materials } = useGLTF('./models/switch.glb')
   return (
     <group {...props} dispose={null}>
       <group scale={0.01}>
@@ -18,4 +18,4 @@ export function Switch(props) {
   )
 }
 
-useGLTF.preload('/models/switch.glb')
+useGLTF.preload('./models/switch.glb')

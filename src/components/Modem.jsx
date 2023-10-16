@@ -4,7 +4,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Modem(props) {
-  const { nodes, materials } = useGLTF('/models/blackModem.glb')
+  const { nodes, materials } = useGLTF('./models/blackModem.glb')
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.029}>
@@ -23,4 +23,4 @@ export function Modem(props) {
   )
 }
 
-useGLTF.preload('/models/blackModem.glb')
+useGLTF.preload('./models/blackModem.glb')
